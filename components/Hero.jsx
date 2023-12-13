@@ -37,7 +37,7 @@ export default function Hero() {
                     </span>
                     <span className="block md:hidden">Hello, I&rsquo;m Great Alexander,<br/></span>
                     A Developer & Designer,<br/>
-                    I&rsquo;m here to build, design,<br/>
+                    Here to build, design,<br/>
                     and transform your visions<br/>
                     into reality.<br/>
                 </motion.h1>
