@@ -36,7 +36,7 @@ export default function Hero() {
                         <span>Alexander,</span>
                     </span>
                     <span className="block md:hidden">Hello, I&rsquo;m Great Alexander,<br/></span>
-                    I&rsquo;m a Developer & Designer<br/>
+                    A Developer & Designer,<br/>
                     I&rsquo;m here to build, design,<br/>
                     and transform your visions<br/>
                     into reality.<br/>

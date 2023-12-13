@@ -37,7 +37,7 @@ export default function MyCursor() {
     })
 
     return (
-        <div id="custom-cursor" className="custom-cursor hidden md:block">
+        <div id="custom-cursor" className="custom-cursor hidden md:flex">
             <span className="cursor-text">View</span>
         </div>
     );

@@ -61,7 +61,13 @@ export default function About() {
                     initial={{ y: 100, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
-                    className='w-full flex justify-start'>
+                    className='w-full flex flex-col gap-4 justify-start'>
+                        <p className='text-baseline md:text-xl w-full md:w-11/12 leading-10'>
+                            I strongly advocate for design and development that is modular, 
+                            scalable, aesthetically pleasing, and user-centered. With extensive 
+                            proficiency in both UI/UX design and web development, 
+                            I craft websites that excel in selling, performance, and visual appeal.
+                        </p>
                         <p className='text-baseline md:text-xl w-full md:w-11/12 leading-10'>
                             I strongly advocate for design and development that is modular, 
                             scalable, aesthetically pleasing, and user-centered. With extensive 
