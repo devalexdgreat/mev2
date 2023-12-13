@@ -63,10 +63,11 @@ export default function About() {
                     transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
                     className='w-full flex flex-col gap-4 justify-start'>
                         <p className='text-baseline md:text-xl w-full md:w-11/12 leading-10'>
-                            I strongly advocate for design and development that is modular, 
-                            scalable, aesthetically pleasing, and user-centered. With extensive 
-                            proficiency in both UI/UX design and web development, 
-                            I craft websites that excel in selling, performance, and visual appeal.
+                            Hello there! I&rsquo;m Ogbuagu Great Alexander, a passionate 
+                            and versatile Fullstack Developer and Designer with a 
+                            keen eye for detail and a love for creating seamless, 
+                            user-friendly digital experiences. With over 2 years of hands-on experience, 
+                            I&rsquo;ve honed my skills across various technologies to craft compelling web applications.
                         </p>
                         <p className='text-baseline md:text-xl w-full md:w-11/12 leading-10'>
                             I strongly advocate for design and development that is modular, 
