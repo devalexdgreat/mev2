@@ -127,7 +127,7 @@ export default function Navbar() {
                                 initial={{ x: 100, opacity: 0 }}
                                 whileInView={{ x: 0, opacity: 1 }}
                                 transition={{ delay: 1.8 }}
-                                ><Link href={"/Blogs"} className="nav-linkMob text-5xl" onClick={toggleMenu}>Blog</Link></motion.span>
+                                ><a className="nav-linkMob text-5xl text-gray-500" onClick={toggleMenu}>Blog</a></motion.span>
                             </div>
 
                             <div className="w-11/12 h-28 mx-auto flex flex-col justify-between">
