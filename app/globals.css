@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.headertin {
+    color: #fff; 
+    background-image: -webkit-linear-gradient(0deg, #ddd 0%, #17B486 50%, #fff 100%); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
+}
+
+.spectin {
+    color: #fff; 
+    background-image: -webkit-linear-gradient(0deg, #000 0%, #818181 50%, #000 100%); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
+}
+
+.mesher {
+    background-color: #000000;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(240.00, 0%, 0%) 0, transparent 55%);
+}
+
+.allbanner {
+    backdrop-filter: blur(8px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(1, 2, 2, 0.75);
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+} */
