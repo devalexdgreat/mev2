@@ -91,7 +91,7 @@ export default function Navbar() {
                     animate="animate"
                     exit="exit"
                     className="h-screen w-full bg-[#17B486] top-0 absolute md:hidden mobMenuStyle 
-                    flex flex-col justify-between gap-12">
+                    flex flex-col justify-between gap-8">
                         <div className="w-11/12 mx-auto flex items-center justify-between h-24">
                            <span className="nav-branding text-2xl font-bold text-white py-4">GR8ALZ
                             <span className="text-black font-bold text-2xl">.</span>
