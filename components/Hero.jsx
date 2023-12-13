@@ -48,8 +48,8 @@ export default function Hero() {
                 className="text-3xl font-bold md:text-7xl md:font-medium w-full md:w-11/12 headertin 
                 pb-0 md:pb-1 text-left md:hidden">
                     Hello, I&rsquo;m Great Alexander,
-                    I&rsquo;m a Developer & Designer
-                    I&rsquo;m here to build, design,
+                    A Developer & Designer
+                    Here to build, design,
                     and transform your visions
                     into reality.
                 </motion.h1>
