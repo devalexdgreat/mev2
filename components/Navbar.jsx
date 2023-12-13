@@ -42,7 +42,7 @@ export default function Navbar() {
       };
 
     return (
-        <nav className="w-full bg-transparent fixed navStyle">
+        <nav className="w-full bg fixed navStyle">
             <div className="w-11/12 h-24 mx-auto flex justify-between md:w-10/12 items-center">
                 <motion.h1 
                 initial={{ x: -100, opacity: 0, }}
@@ -107,27 +107,27 @@ export default function Navbar() {
                                 initial={{ x: 100, opacity: 0 }}
                                 whileInView={{ x: 0, opacity: 1 }}
                                 transition={{ delay: 1 }}
-                                ><Link href={"/"} className="nav-linkMob text-5xl" onClick={toggleMenu}>Home</Link></motion.span>
+                                ><Link href={"/"} className="nav-linkMob text-3xl" onClick={toggleMenu}>Home</Link></motion.span>
                                 <motion.span 
                                 initial={{ x: 100, opacity: 0 }}
                                 whileInView={{ x: 0, opacity: 1 }}
                                 transition={{ delay: 1.2 }}
-                                ><Link href={"/About"} className="nav-linkMob text-5xl" onClick={toggleMenu}>About</Link></motion.span>
+                                ><Link href={"/About"} className="nav-linkMob text-3xl" onClick={toggleMenu}>About</Link></motion.span>
                                 <motion.span 
                                 initial={{ x: 100, opacity: 0 }}
                                 whileInView={{ x: 0, opacity: 1 }}
                                 transition={{ delay: 1.4 }}
-                                ><Link href={"/Services"} className="nav-linkMob text-5xl" onClick={toggleMenu}>Services</Link></motion.span>
+                                ><Link href={"/Services"} className="nav-linkMob text-3xl" onClick={toggleMenu}>Services</Link></motion.span>
                                 <motion.span 
                                 initial={{ x: 100, opacity: 0 }}
                                 whileInView={{ x: 0, opacity: 1 }}
                                 transition={{ delay: 1.6 }}
-                                ><Link href={"/Projects"} className="nav-linkMob text-5xl" onClick={toggleMenu}>Works</Link></motion.span>
+                                ><Link href={"/Projects"} className="nav-linkMob text-3xl" onClick={toggleMenu}>Works</Link></motion.span>
                                 <motion.span 
                                 initial={{ x: 100, opacity: 0 }}
                                 whileInView={{ x: 0, opacity: 1 }}
                                 transition={{ delay: 1.8 }}
-                                ><a className="nav-linkMob text-5xl text-gray-500" onClick={toggleMenu}>Blog</a></motion.span>
+                                ><a className="nav-linkMob text-3xl text-gray-500" onClick={toggleMenu}>Blog</a></motion.span>
                             </div>
 
                             <div className="w-11/12 h-28 mx-auto flex flex-col justify-between">

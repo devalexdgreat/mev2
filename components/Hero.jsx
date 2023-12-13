@@ -17,7 +17,7 @@ export default function Hero() {
     //   });
 
     return(
-        <div className="w-full h-screen flex relative items-center heroStyle">
+        <div className="w-full h-screen flex relative items-center heroStyle overflow-hidden">
             <div className="w-11/12 md:w-10/12 mx-auto flex flex-col justify-center h-4/6 
             text-white">
                 <motion.h1 
@@ -45,15 +45,19 @@ export default function Hero() {
                 initial={{ x: -100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ delay: 0.3, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
-                className="text-3xl font-bold md:text-7xl md:font-medium w-full md:w-11/12 headertin 
-                pb-0 md:pb-12 text-left md:hidden">
-                    Hello, I&rsquo;m Great Alexander,
+                className="text-xl font-bold w-full md:w-11/12 headertin 
+                pb-0 md:pb-12 text-center md:hidden">
+                    Hello, I&rsquo;m Great Alexander,<br/>
                     A Developer & Designer
                     Here to build, design,
                     and transform your visions
                     into reality.
                 </motion.h1>
-                <div className="w-full mx-auto flex justify-center md:justify-end">
+                <motion.div 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: 0.4, duration: 0.95, ease: [0.16, 1, 0.3, 1] }}
+                className="w-full hidden mx-auto md:flex justify-center md:justify-end">
                     <Link href={"/About"} className="w-full pt-12 md:pt-0 md:w-4/12 md:text-right text-right 
                     text-lg md:text-[15px] md:hover:scale-125 duration-700 bottom-24 md:bottom-16 absolute pe-4
                     mt-16 md:mt-0">
@@ -61,7 +65,19 @@ export default function Hero() {
                         Specializing in React.js, Next.js, Mongo DB and Tailwind CSS, 
                         I blend form and function to create seamless digital experiences.
                     </Link>
-                </div>
+                </motion.div>
+                <motion.div 
+                initial={{ x: 100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ delay: 0.3, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+                className="w-full flex md:hidden mx-auto justify-center">
+                    <Link href={"/About"} className="w-full pt-12 text-center 
+                    text-base duration-700 pe-4">
+                        I&rsquo;m Based in Nigeria, 
+                        Specializing in React.js, Next.js, Mongo DB and Tailwind CSS, 
+                        I blend form and function to create seamless digital experiences.
+                    </Link>
+                </motion.div>
                 {/* <p className="md:text-left my-6 text-xl md:text-2xl text-[#17b486]">
                     I'm a {text}
                     <Cursor cursorColor='#17B486' /> 
