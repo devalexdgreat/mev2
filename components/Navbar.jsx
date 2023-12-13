@@ -91,7 +91,7 @@ export default function Navbar() {
                     animate="animate"
                     exit="exit"
                     className="h-screen w-full bg-[#17B486] top-0 absolute md:hidden mobMenuStyle 
-                    flex flex-col justify-between gap-1">
+                    justify-between">
                         <div className="w-11/12 mx-auto flex items-center justify-between h-24">
                            <span className="nav-branding text-2xl font-bold text-white py-4">GR8ALZ
                             <span className="text-black font-bold text-2xl">.</span>
@@ -101,7 +101,7 @@ export default function Navbar() {
                                <span className="text-xl border-b">Close</span>
                            </div> 
                         </div>
-                        <div className="flex flex-col gap-16 mb-12">
+                        <div className="flex flex-col gap-16 mb-20 mt-8">
                             <div className="flex flex-col gap-8 w-11/12 mx-auto items-start relative">
                                 <motion.span 
                                 initial={{ x: 100, opacity: 0 }}
