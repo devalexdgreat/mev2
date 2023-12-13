@@ -42,7 +42,7 @@ export default function About() {
     })
 
     return (
-        <div className="w-full mt-56 md:mt-72 mb-32 md:mb-64">
+        <div className="w-full mt-56 md:mt-72 mb-32 md:mb-64 overflow-hidden">
             <div className="w-11/12 md:w-10/12 mx-auto">
                 <div className='mb-24 md:mb-64'>
                     <motion.h1 
