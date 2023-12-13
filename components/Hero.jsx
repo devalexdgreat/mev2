@@ -45,8 +45,8 @@ export default function Hero() {
                 initial={{ x: -100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ delay: 0.3, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
-                className="text-xl font-bold w-full md:w-11/12 headertin 
-                pb-0 md:pb-12 text-center md:hidden">
+                className="text-3xl font-bold w-full md:w-11/12 headertin 
+                pb-0 md:pb-12 text-left md:hidden">
                     Hello, I&rsquo;m Great Alexander,<br/>
                     A Developer & Designer
                     Here to build, design,
@@ -71,8 +71,8 @@ export default function Hero() {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ delay: 0.3, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
                 className="w-full flex md:hidden mx-auto justify-center">
-                    <Link href={"/About"} className="w-full pt-12 text-center 
-                    text-base duration-700 pe-4">
+                    <Link href={"/About"} className="w-full pt-12 text-left 
+                    text-xl duration-700 pe-4">
                         I&rsquo;m Based in Nigeria, 
                         Specializing in React.js, Next.js, Mongo DB and Tailwind CSS, 
                         I blend form and function to create seamless digital experiences.
