@@ -6,6 +6,7 @@ import { Montserrat } from 'next/font/google';
 import localFont from 'next/font/local';
 import MyCursor from '@/components/MyCursor';
 import MidMenu from '@/components/MidMenu';
+import Nav from '@/components/Nav';
 
 const anyFont = localFont({
   src: [
@@ -32,7 +33,7 @@ export default function RootLayout({ children }) {
         <div className="text-white relative">
           <MyCursor />
           {/* <MidMenu /> */}
-          <Navbar />
+          <Nav />
           {children}
           <Footer />
         </div>

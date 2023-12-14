@@ -7,17 +7,9 @@ import Magnetic from "@/components/Magnetic";
 export default function Navbar() {    
 
     const [open, setOpen] = useState(false);
-    // const [openedStyle, setOpenedStyle] = useState(0.95);
 
     const toggleMenu = () => {
         setOpen((prevOpen) => !prevOpen);
-        // if (open === true ){
-        //     let openedStyleVar = 0.94;
-        //     setOpenedStyle(openedStyleVar);
-        // } else {
-        //     let openedStyleVar = 1;
-        //     setOpenedStyle(openedStyleVar);
-        // }
     };
 
     const menuVars = {
@@ -51,7 +43,6 @@ export default function Navbar() {
                 className=""
                 >   <Magnetic>
                         <Link href={"/"} className="nav-branding text-2xl font-bold py-4">GR8ALZ
-                            <strong className="text-[#17B486]">.</strong>
                         </Link>
                     </Magnetic>
                 </motion.h1>
@@ -94,7 +85,6 @@ export default function Navbar() {
                     justify-between">
                         <div className="w-11/12 mx-auto flex items-center justify-between h-24">
                            <span className="nav-branding text-2xl font-bold text-white py-4">GR8ALZ
-                            <span className="text-black font-bold text-2xl">.</span>
                            </span>
                            <div onClick={toggleMenu} className="md:hidden flex items-center 
                            justify-center menuBtn2 font-bold">

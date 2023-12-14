@@ -23,7 +23,7 @@ export default function Projects() {
                 <motion.div 
                 initial={{ x: -100, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
-                transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ delay: 0.05, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
                 className='mb-12 pt-24'>
                     <h1 className='text-4xl w-11/12 md:text-6xl md:w-5/12 headertin'>
                         My Recent Endeavors
@@ -36,9 +36,9 @@ export default function Projects() {
                     transition={{ delay: 0.2, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
                     className=''>
                         <Link href={"#"} className="text-white view flex flex-col items-start justify-end  
-                            relative rounded-md hover:scale-110 duration-500">
-                            <div className='rounded-md'>
-                                <Image src={imgEig} alt='' className='h-full object-cover' />
+                            relative rounded-md">
+                            <div className='rounded-md overflow-hidden'>
+                                <Image src={imgEig} alt='' className='h-full object-cover hover:scale-110 duration-500' />
                             </div>
                             <div className="w-full h-full flex items-end">
                                 <div className='w-full mx-auto flex items-center justify-between py-1'>
@@ -62,9 +62,9 @@ export default function Projects() {
                     transition={{ delay: 0.2, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
                     className=''>
                         <Link href={"#"} className="text-white view flex flex-col items-start justify-end  
-                            relative rounded-md hover:scale-110 duration-500">
-                            <div className='rounded-md'>
-                                <Image src={imgSev} alt='' className='h-full object-cover' />
+                            relative rounded-md">
+                            <div className='rounded-md overflow-hidden'>
+                                <Image src={imgSev} alt='' className='h-full object-cover hover:scale-110 duration-500' />
                             </div>
                             <div className="w-full h-full flex items-end">
                                 <div className='w-full mx-auto flex items-center justify-between py-1'>
@@ -88,9 +88,9 @@ export default function Projects() {
                     transition={{ delay: 0.2, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
                     className=''>
                         <Link href={"#"} className="text-white view flex flex-col items-start justify-end  
-                            relative rounded-md hover:scale-110 duration-500">
-                            <div className='rounded-md'>
-                                <Image src={imgSix} alt='' className='h-full object-cover' />
+                            relative rounded-md">
+                            <div className='rounded-md overflow-hidden'>
+                                <Image src={imgSix} alt='' className='h-full object-cover hover:scale-110 duration-500' />
                             </div>
                             <div className="w-full h-full flex items-end">
                                 <div className='w-full mx-auto flex items-center justify-between py-1'>
@@ -109,7 +109,7 @@ export default function Projects() {
                     </motion.div>
                 </div>
 
-                {/* <div className='w-full flex flex-col border-t border-[#17B486]'>
+                {/* <div className='w-full flex flex-col border-t border-green-500'>
                     <div className='w-full border-b border-[#17B486]'>
                         <Link href={"/Projects/hhfhh"} className=' w-full group view'>
                             <div className='w-full px-3 mx-auto flex justify-between items-center'>
@@ -166,7 +166,7 @@ export default function Projects() {
                                     initial={{ x: 100, opacity: 0 }}
                                     whileInView={{ x: 0, opacity: 1 }}
                                     transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
-                                    className="h-12 bg-[#17B486] w-full flex items-center">
+                                    className="h-12 bg-green-500 w-full flex items-center">
                                         <p className='ms-4'>TradeLink ltd.</p>
                                     </motion.div>
                                 </Magnetic>
@@ -176,7 +176,7 @@ export default function Projects() {
                                     initial={{ x: 100, opacity: 0 }}
                                     whileInView={{ x: 0, opacity: 1 }}
                                     transition={{ delay: 0.2, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
-                                    className="h-12 bg-[#17B486] w-full flex items-center">
+                                    className="h-12 bg-green-500 w-full flex items-center">
                                         <p className='ms-4'>ObiSoft</p>
                                     </motion.div>
                                 </Magnetic>
@@ -186,7 +186,7 @@ export default function Projects() {
                                     initial={{ x: 100, opacity: 0 }}
                                     whileInView={{ x: 0, opacity: 1 }}
                                     transition={{ delay: 0.3, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
-                                    className="h-12 bg-[#17B486] w-full flex items-center">
+                                    className="h-12 bg-green-500 w-full flex items-center">
                                         <p className='ms-4'>CheckSymptoms</p>
                                     </motion.div>
                                 </Magnetic>
@@ -196,7 +196,7 @@ export default function Projects() {
                                     initial={{ x: 100, opacity: 0 }}
                                     whileInView={{ x: 0, opacity: 1 }}
                                     transition={{ delay: 0.4, duration: 0.75, ease: [0.16, 1, 0.3, 1] }} 
-                                    className="h-12 bg-[#17B486] w-full flex items-center">
+                                    className="h-12 bg-green-500 w-full flex items-center">
                                         <p className='ms-4'>Great Tunes</p>
                                     </motion.div>
                                 </Magnetic>
@@ -206,7 +206,7 @@ export default function Projects() {
                                     initial={{ x: 100, opacity: 0 }}
                                     whileInView={{ x: 0, opacity: 1 }}
                                     transition={{ delay: 0.5, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
-                                    className="h-12 bg-[#17B486] w-full flex items-center">
+                                    className="h-12 bg-green-500 w-full flex items-center">
                                         <p className='ms-4'>House Sort</p>
                                     </motion.div>
                                 </Magnetic>
@@ -216,7 +216,7 @@ export default function Projects() {
                                     initial={{ x: 100, opacity: 0 }}
                                     whileInView={{ x: 0, opacity: 1 }}
                                     transition={{ delay: 0.6, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
-                                    className="h-12 bg-[#17B486] w-full flex items-center">
+                                    className="h-12 bg-green-500 w-full flex items-center">
                                         <p className='ms-4'>Alesoft AI</p>
                                     </motion.div>
                                 </Magnetic>
