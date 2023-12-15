@@ -60,10 +60,10 @@ export default function Projects() {
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ delay: 0.2, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
                     className=''>
-                        <Link href={"#"} className="text-white view flex flex-col items-start justify-end  
-                            relative rounded-md hover:scale-110 duration-500">
-                            <div className='rounded-md'>
-                                <Image src={imgEig} alt='' className='h-full object-cover' />
+                        <Link href={"/Projects/hhh"} className="text-white view flex flex-col items-start justify-end  
+                            relative rounded-md">
+                            <div className='rounded-md overflow-hidden'>
+                                <Image src={imgEig} alt='' className='h-full object-cover hover:scale-110 duration-500' />
                             </div>
                             <div className="w-full h-full flex items-end">
                                 <div className='w-full mx-auto flex items-center justify-between py-1'>
@@ -86,10 +86,10 @@ export default function Projects() {
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ delay: 0.2, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
                     className=''>
-                        <Link href={"#"} className="text-white view flex flex-col items-start justify-end  
-                            relative rounded-md hover:scale-110 duration-500">
-                            <div className='rounded-md'>
-                                <Image src={imgSev} alt='' className='h-full object-cover' />
+                        <Link href={"/Projects/hhh"} className="text-white view flex flex-col items-start justify-end  
+                            relative rounded-md">
+                            <div className='rounded-md overflow-hidden'>
+                                <Image src={imgSev} alt='' className='h-full object-cover hover:scale-110 duration-500' />
                             </div>
                             <div className="w-full h-full flex items-end">
                                 <div className='w-full mx-auto flex items-center justify-between py-1'>
@@ -112,10 +112,10 @@ export default function Projects() {
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ delay: 0.2, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
                     className=''>
-                        <Link href={"#"} className="text-white view flex flex-col items-start justify-end  
-                            relative rounded-md hover:scale-110 duration-500">
-                            <div className='rounded-md'>
-                                <Image src={imgSix} alt='' className='h-full object-cover' />
+                        <Link href={"/Projects/hhh"} className="text-white view flex flex-col items-start justify-end  
+                            relative rounded-md">
+                            <div className='rounded-md overflow-hidden'>
+                                <Image src={imgSix} alt='' className='h-full object-cover hover:scale-110 duration-500' />
                             </div>
                             <div className="w-full h-full flex items-end">
                                 <div className='w-full mx-auto flex items-center justify-between py-1'>

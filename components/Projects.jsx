@@ -35,7 +35,7 @@ export default function Projects() {
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ delay: 0.2, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
                     className=''>
-                        <Link href={"#"} className="text-white view flex flex-col items-start justify-end  
+                        <Link href={"/Projects/hhh"} className="text-white view flex flex-col items-start justify-end  
                             relative rounded-md">
                             <div className='rounded-md overflow-hidden'>
                                 <Image src={imgEig} alt='' className='h-full object-cover hover:scale-110 duration-500' />
@@ -61,7 +61,7 @@ export default function Projects() {
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ delay: 0.2, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
                     className=''>
-                        <Link href={"#"} className="text-white view flex flex-col items-start justify-end  
+                        <Link href={"/Projects/hhh"} className="text-white view flex flex-col items-start justify-end  
                             relative rounded-md">
                             <div className='rounded-md overflow-hidden'>
                                 <Image src={imgSev} alt='' className='h-full object-cover hover:scale-110 duration-500' />
@@ -87,7 +87,7 @@ export default function Projects() {
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ delay: 0.2, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
                     className=''>
-                        <Link href={"#"} className="text-white view flex flex-col items-start justify-end  
+                        <Link href={"/Projects/hhh"} className="text-white view flex flex-col items-start justify-end  
                             relative rounded-md">
                             <div className='rounded-md overflow-hidden'>
                                 <Image src={imgSix} alt='' className='h-full object-cover hover:scale-110 duration-500' />

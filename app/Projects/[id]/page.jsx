@@ -65,11 +65,11 @@ export default function Projects() {
                         transition={{ delay: 0.01, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
                         className="flex items-start justify-end flex-col w-full md:w-6/12 text-lg font-thin">
                             <div className="">
-                                <h1 className="border-b pb-1 border-[#17B486] text-4xl mb-3 headertin">Stack Used</h1>
+                                <h1 className="border-b pb-1 border-green-500 text-4xl mb-3 headertin">Stack Used</h1>
                                 <p className="text-lg mb-8">
                                     html, css, Javacsript 
                                 </p> 
-                                <h1 className="border-b pb-1 border-[#17B486] text-4xl mb-3 headertin">Details</h1>
+                                <h1 className="border-b pb-1 border-green-500 text-4xl mb-3 headertin">Details</h1>
                                 <p className="text-lg text-[#eee]">
                                     MedicSync empowers patients to take control of their health journey 
                                     by providing a user-friendly platform for comprehensive health management.
