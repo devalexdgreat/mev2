@@ -66,8 +66,8 @@ export default function Nav() {
               initial="initial"
               animate="animate"
               exit="exit"
-              className="h-screen bg-green-500 top-0 fixed w-full">
-                <div className="flex flex-col h-full w-full justify-between relative">
+              className="newMenu bg-green-500 top-0 fixed w-full">
+                <div className="flex flex-col h-full w-full justify-between">
                   <div className="w-11/12 md:w-10/12 mx-auto flex justify-between items-center py-6">
                       <motion.h1
                       initial={{ x: -100, opacity: 0, }}
@@ -95,7 +95,7 @@ export default function Nav() {
                   initial={{ x: 100, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{ delay: 1 }} className="text-center">
-                    <Link href={"/"} className="text-5xl text-center" onClick={toggleMenu}>
+                    <Link href={"/"} className="text-3xl md:text-5xl text-center" onClick={toggleMenu}>
                       Home
                     </Link>
                   </motion.span>
@@ -103,7 +103,7 @@ export default function Nav() {
                   initial={{ x: 100, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{ delay: 1.2 }} className="text-center">
-                    <Link href={"/About"} className="text-5xl text-center" onClick={toggleMenu}>
+                    <Link href={"/About"} className="text-3xl md:text-5xl text-center" onClick={toggleMenu}>
                       About Me
                     </Link>
                   </motion.span>
@@ -111,7 +111,7 @@ export default function Nav() {
                   initial={{ x: 100, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{ delay: 1.4 }} className="text-center">
-                    <Link href={"/Services"} className="text-5xl text-center" onClick={toggleMenu}>
+                    <Link href={"/Services"} className="text-3xl md:text-5xl text-center" onClick={toggleMenu}>
                       Services
                     </Link>
                   </motion.span>
@@ -119,7 +119,7 @@ export default function Nav() {
                   initial={{ x: 100, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{ delay: 1.6 }} className="text-center">
-                    <Link href={"/Projects"} className="text-5xl text-center" onClick={toggleMenu}>
+                    <Link href={"/Projects"} className="text-3xl md:text-5xl text-center" onClick={toggleMenu}>
                       Works
                     </Link>
                   </motion.span>
@@ -127,7 +127,7 @@ export default function Nav() {
                   initial={{ x: 100, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{ delay: 1.8 }} className="text-center">
-                    <a className="text-5xl text-center text-gray-500" onClick={toggleMenu}>
+                    <a className="text-3xl md:text-5xl text-center text-gray-500" onClick={toggleMenu}>
                       Blogs
                     </a>
                   </motion.span>
@@ -135,7 +135,7 @@ export default function Nav() {
                   initial={{ x: 100, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{ delay: 2.0 }} className="text-center">
-                    <Link href={"#footer"} className="text-5xl text-center" onClick={toggleMenu}>
+                    <Link href={"#footer"} className="text-3xl md:text-5xl text-center" onClick={toggleMenu}>
                       Contact Me
                     </Link>
                   </motion.span>
