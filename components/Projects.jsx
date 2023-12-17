@@ -17,6 +17,20 @@ import Magnetic from './Magnetic';
 
 export default function Projects() {
 
+    const [pjxData, setPjxData] = useState([]);
+    
+    useEffect(() => {
+        fetch('http://localhost:3000/api/projects', {
+            cache: 'no-store',
+        })
+        .then((res) => res.json())
+        .then((data) => {
+            const recentData = data.reverse();
+            setPjxData(recentData);
+            
+        })
+    }, [])
+
     return(
         <div className="w-full my-40 overflow-hidden">
             <div className="w-11/12 md:w-10/12 mx-auto" id='works'>
@@ -30,83 +44,31 @@ export default function Projects() {
                     </h1>
                 </motion.div>
                 <div className="w-full mt-12 grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <motion.div 
-                    initial={{ x: 200, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ delay: 0.2, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
-                    className=''>
-                        <Link href={"/Projects/hhh"} className="text-white view flex flex-col items-start justify-end  
-                            relative rounded-md">
-                            <div className='rounded-md overflow-hidden'>
-                                <Image src={imgEig} alt='' className='h-full object-cover hover:scale-110 duration-500' />
-                            </div>
-                            <div className="w-full h-full flex items-end">
-                                <div className='w-full mx-auto flex items-center justify-between py-1'>
-                                    <h1 className="text-2xl md:text-2xl font-medium">Portfolio v1</h1>
-                                    <div className="text-base font-light">
-                                        <span className="py-0.5 px-2 rounded-md text-white">
-                                            DEV
-                                        </span>
-                                        <span className="py-0.5 ps-2 rounded-md text-white">
-                                            UI
-                                        </span>
-                                    </div> 
-                                </div>
-                            </div>
-                        </Link>
-                    </motion.div>
-
-                    <motion.div 
-                    initial={{ x: 200, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ delay: 0.2, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
-                    className=''>
-                        <Link href={"/Projects/hhh"} className="text-white view flex flex-col items-start justify-end  
-                            relative rounded-md">
-                            <div className='rounded-md overflow-hidden'>
-                                <Image src={imgSev} alt='' className='h-full object-cover hover:scale-110 duration-500' />
-                            </div>
-                            <div className="w-full h-full flex items-end">
-                                <div className='w-full mx-auto flex items-center justify-between py-1'>
-                                    <h1 className="text-2xl md:text-2xl font-medium">Tiktok Clone</h1>
-                                    <div className="text-base font-light">
-                                        <span className="py-0.5 px-2 rounded-md text-white">
-                                            DEV
-                                        </span>
-                                        <span className="py-0.5 ps-2 rounded-md text-white">
-                                            UI
-                                        </span>
-                                    </div> 
-                                </div>
-                            </div>
-                        </Link>
-                    </motion.div>
-
-                    <motion.div 
-                    initial={{ x: 200, opacity: 0 }}
-                    whileInView={{ x: 0, opacity: 1 }}
-                    transition={{ delay: 0.2, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
-                    className=''>
-                        <Link href={"/Projects/hhh"} className="text-white view flex flex-col items-start justify-end  
-                            relative rounded-md">
-                            <div className='rounded-md overflow-hidden'>
-                                <Image src={imgSix} alt='' className='h-full object-cover hover:scale-110 duration-500' />
-                            </div>
-                            <div className="w-full h-full flex items-end">
-                                <div className='w-full mx-auto flex items-center justify-between py-1'>
-                                    <h1 className="text-2xl md:text-2xl font-medium">Medicsyn</h1>
-                                    <div className="text-base font-light">
-                                        <span className="py-0.5 px-2 rounded-md text-white">
-                                            DEV
-                                        </span>
-                                        <span className="py-0.5 ps-2 rounded-md text-white">
-                                            UI
-                                        </span>
-                                    </div> 
-                                </div>
-                            </div>
-                        </Link>
-                    </motion.div>
+                    {pjxData.map((p) => (
+                            
+                            <motion.div 
+                            initial={{ x: 200, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            transition={{ delay: 0.2, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+                            className='' key={p._id}>
+                                <Link href={`/Projects/${p._id}`} className="text-white view flex flex-col items-start justify-end  
+                                    relative rounded-md">
+                                    <div className='rounded-md overflow-hidden'>
+                                        <Image src={p.imgurl} width={900} height={900} alt='' className='h-full object-cover hover:scale-110 duration-500' />
+                                    </div>
+                                    <div className="w-full h-full flex items-end">
+                                        <div className='w-full mx-auto flex items-center justify-between py-1'>
+                                            <h1 className="text-2xl md:text-2xl font-medium">{p.name}</h1>
+                                            <div className="text-base font-light">
+                                                <span className="py-0.5 ps-2 rounded-md text-white">
+                                                    {p.stack}
+                                                </span>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </Link>
+                            </motion.div>
+                        ))}
                 </div>
 
                 {/* <div className='w-full flex flex-col border-t border-green-500'>

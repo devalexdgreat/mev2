@@ -4,41 +4,43 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Magnetic from "@/components/Magnetic";
 import gsap from "gsap";
+import Image from "next/image";
+import dP from "@/public/mepic.png"
 
 
-export default function Nav() {
+export default function AdminNav() {
 
-  useEffect(() => {
-    const cursor = document.getElementById('custom-cursor');
-    const links = document.querySelectorAll('a');
-    const cursorText = document.querySelector('.cursor-text');
+    useEffect(() => {
+        const cursor = document.getElementById('custom-cursor');
+        const links = document.querySelectorAll('a');
+        const cursorText = document.querySelector('.cursor-text');
 
-    const onMouseMove = (event) => {
-        const {clientX,clientY} = event;
-        gsap.to(cursor, {x:clientX,y:clientY})
-    }
-
-    const onMouseEnterLink = (event) => {
-        const link = event.target;
-        if(link.classList.contains('view')) {
-            gsap.to(cursor,{scale:4, ease: "power4.in"})
-            cursorText.style.display = 'block';
-        } else {
-            gsap.to(cursor,{scale:4})
+        const onMouseMove = (event) => {
+            const {clientX,clientY} = event;
+            gsap.to(cursor, {x:clientX,y:clientY})
         }
-    }
 
-    const onMouseLeaveLink = () => {
-        gsap.to(cursor, {scale:1, ease: "circ.out"})
-        cursorText.style.display = 'none';
-    }
+        const onMouseEnterLink = (event) => {
+            const link = event.target;
+            if(link.classList.contains('view')) {
+                gsap.to(cursor,{scale:4, ease: "power4.in"})
+                cursorText.style.display = 'block';
+            } else {
+                gsap.to(cursor,{scale:4})
+            }
+        }
 
-    document.addEventListener('mousemove', onMouseMove);
-    links.forEach((link) => {
-        link.addEventListener('mouseenter', onMouseEnterLink)
-        link.addEventListener('mouseleave', onMouseLeaveLink)
+        const onMouseLeaveLink = () => {
+            gsap.to(cursor, {scale:1, ease: "circ.out"})
+            cursorText.style.display = 'none';
+        }
+
+        document.addEventListener('mousemove', onMouseMove);
+        links.forEach((link) => {
+            link.addEventListener('mouseenter', onMouseEnterLink)
+            link.addEventListener('mouseleave', onMouseLeaveLink)
+        })
     })
-})
 
     const [open, setOpen] = useState(false);
 
@@ -87,12 +89,17 @@ export default function Nav() {
                 initial={{ x: 100, opacity: 0, }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
-                className="text-2xl bg-green-500 text-white py-1 px-3 rounded-full" 
-                onClick={toggleMenu}>
-                    <a>Menu</a>
+                className="text-2xl bg-red-600 text-white rounded-full">
+                    
+                    <a className="w-full flex gap-2 items-center py-1 px-3 ">
+                        <div className="h-8 w-8 flex items-center justify-center border rounded-full">
+                            <Image src={dP} alt="" className="h-full w-full rounded-full"/>
+                        </div>
+                        <span>Log Out</span>
+                    </a>
                 </motion.button>
             </div>
-            <AnimatePresence>
+            {/* <AnimatePresence>
             {open && (
               <motion.div
               variants={menuVars}
@@ -102,27 +109,33 @@ export default function Nav() {
               className="newMenu bg-green-500 top-0 fixed w-full">
                 <div className="flex flex-col h-full w-full justify-between">
                   <div className="w-11/12 md:w-10/12 mx-auto flex justify-between items-center py-6">
-                      <motion.h1
-                      initial={{ x: -100, opacity: 0, }}
-                      animate={{ x: 0, opacity: 1 }}
-                      transition={{ delay: 0.5, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
-                      >
-                          <Magnetic>
-                              <Link href={"/"} className="text-3xl font-medium text-white py-3 px-1.5 rounded-full">
-                                  ADG
-                              </Link>
-                          </Magnetic>
-                            
-                      </motion.h1>
+                    <motion.h1
+                    initial={{ x: -100, opacity: 0, }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ delay: 0.5, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+                    >
+                        <Magnetic>
+                            <Link href={"/"} className="text-3xl font-medium text-white py-3 px-1.5 rounded-full">
+                                ADG
+                            </Link>
+                        </Magnetic>
+                        
+                    </motion.h1>
                       
-                      <motion.button 
-                      initial={{ x: 100, opacity: 0, }}
-                      animate={{ x: 0, opacity: 1 }}
-                      transition={{ delay: 0.5, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
-                      className="text-2xl bg-black text-white py-1 px-3 rounded-full" 
-                      onClick={toggleMenu}>
-                          <a>Close</a>
-                      </motion.button>
+                    <motion.button 
+                    initial={{ x: 100, opacity: 0, }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ delay: 0.5, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+                    className="text-2xl bg-black text-white rounded-full" 
+                    onClick={toggleMenu}>
+                        
+                        <a className="w-full flex gap-2 items-center py-1 px-3 ">
+                            <div className="h-8 w-8 flex items-center justify-center border rounded-full">
+                                <Image src={dP} alt="" className="h-full w-full rounded-full"/>
+                            </div>
+                            <span>Close</span>
+                        </a>
+                    </motion.button>
                   </div>
                   <motion.span 
                   initial={{ x: 100, opacity: 0 }}
@@ -223,7 +236,7 @@ export default function Nav() {
                 </div>
               </motion.div>
             )}
-            </AnimatePresence>
+            </AnimatePresence> */}
         </div>
     );
 }

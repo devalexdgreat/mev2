@@ -1,6 +1,5 @@
 import './globals.css';
 import '@/styles/styles.css';
-import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Montserrat } from 'next/font/google';
 import localFont from 'next/font/local';
@@ -32,8 +31,6 @@ export default function RootLayout({ children }) {
       <body className={anyFont.className}>
         <div className="text-white relative">
           <MyCursor />
-          {/* <MidMenu /> */}
-          <Nav />
           {children}
           <Footer />
         </div>

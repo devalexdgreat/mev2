@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import Hero from '@/components/Hero';
 import Projects from '@/components/Projects';
 import Skills from '@/components/Skills';
+import Nav from "@/components/Nav";
 
 export default function Home() {
 
@@ -41,6 +42,7 @@ export default function Home() {
 
   return (
     <main className='overflow-hidden' data-scroll-container>
+      <Nav />
       <Hero />
       <Projects />
       <Skills />
