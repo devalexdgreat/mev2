@@ -5,7 +5,7 @@ import PjxList from "@/components/PjxList";
 
 const getProjects = async () => {
     try {
-        const res = await fetch(`${process.env.NEXTAUTH_PURL}/api/projects`, {
+        const res = await fetch(`https://devalexdgreat.vercel.app/api/projects`, {
             cache: 'no-store',
         });
         

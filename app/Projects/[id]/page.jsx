@@ -2,7 +2,7 @@ import Details from '@/components/Details';
 
 const getPjxById = async (id) => {
     try {
-        const res = await fetch(`http://localhost:3000/api/projects/${id}`, {
+        const res = await fetch(`https://devalexdgreat.vercel.app/api/projects/${id}`, {
             cache: "no-store",
         });
 

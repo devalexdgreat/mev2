@@ -46,7 +46,7 @@ export default function Projects() {
     const [pjxData, setPjxData] = useState([]);
     
     useEffect(() => {
-        fetch('http://localhost:3000/api/projects', {
+        fetch('https://devalexdgreat.vercel.app/api/projects', {
             cache: 'no-store',
         })
         .then((res) => res.json())
