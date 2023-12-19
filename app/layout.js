@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={anyFont.className}>
         <div className="text-white relative">
-          <MyCursor />
+          {/* <MyCursor /> */}
           {children}
           <Footer />
         </div>
