@@ -56,7 +56,7 @@ export default function Details({ data, pjxs, idex }) {
                             initial={{ x: 100, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             transition={{ delay: 0.002, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
-                            className="w-full md:w-6/12">
+                            className="w-full md:w-6/12 object-cover">
                                 <Image src={data.imgurl} width={900} height={900} alt="" className="h-full w-full"/>
                             </motion.div>
                         </div>
