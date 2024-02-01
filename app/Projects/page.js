@@ -53,8 +53,8 @@ export default function Projects() {
                                 <div className="w-full h-full flex items-end">
                                     <div className='w-full mx-auto flex items-center justify-between py-1'>
                                         <h1 className="text-2xl md:text-2xl font-medium">{p.name}</h1>
-                                        <div className="text-base font-light">
-                                            <span className="py-0.5 ps-2 rounded-md text-white">
+                                        <div className="text-base font-light w-6/12 flex justify-end">
+                                            <span className="py-0.5 ps-2 rounded-md text-white truncate">
                                                 {p.stack}
                                             </span>
                                         </div> 
