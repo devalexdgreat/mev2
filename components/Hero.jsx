@@ -26,7 +26,7 @@ export default function Hero() {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ delay: 0.3, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
                 className="text-3xl md:text-7xl md:font-medium w-full md:w-9/12 headertin 
-                pb-0 md:pb-1">
+                pb-0 md:pb-1 md:mx-auto md:text-center">
                     Hey, I&rsquo;m Great Alexander
                     Elevate your brand with my coding and 
                     design – Let&rsquo;s make it the best.
