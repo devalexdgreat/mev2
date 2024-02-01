@@ -46,7 +46,6 @@ export default async function Projects({ params }) {
     var pjln = projects.length-1; 
     if(index === pjln) {
         passedIndex = -1;
-        return;
     } else {
         passedIndex = index;
     }
