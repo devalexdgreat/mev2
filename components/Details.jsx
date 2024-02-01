@@ -72,9 +72,9 @@ export default function Details({ data, pjxs, idex }) {
                                     <Image src={pjxs[idex].imgurl} width={1200} height={1200} className="h-full object-cover object-center"  alt="" />
                                     <div className="h-full w-full nextpjx absolute top-0 flex 
                                     items-center justify-center flex-col gap-5">
-                                        <h1 className="text-5xl">Tiktok Clone</h1>
+                                        <h1 className="text-5xl">{pjxs[idex].name}</h1>
                                         <Magnetic>
-                                            <Link href={"/projects"} className="py-3 px-6 bg-white text-black rounded-lg">
+                                            <Link href={`/projects/${pjxs[idex].demo}`} className="py-3 px-6 bg-white text-black rounded-lg">
                                                 Next Project
                                             </Link>
                                         </Magnetic>
