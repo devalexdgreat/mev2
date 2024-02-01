@@ -43,7 +43,8 @@ export default async function Projects({ params }) {
 
     var index = projects.findIndex(x => x._id === project._id);
     var passedIndex;
-    if(index === project.length) {
+    var pjln = projects.length-1; 
+    if(index === pjln) {
         passedIndex = -1;
         return;
     } else {
