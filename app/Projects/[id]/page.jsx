@@ -18,15 +18,15 @@ const getPjxById = async (id) => {
 
 const getPjxs = async () => {
     try {
-        const resi = await fetch(`https://devalexdgreat.vercel.app/api/projects`, {
+        const res = await fetch(`https://devalexdgreat.vercel.app/api/projects`, {
             cache: "no-store",
         });
 
-        if (!resi.ok) {
+        if (!res.ok) {
             throw new Error("Failed to fetch Projects");
         }
 
-        return resi.json();
+        return res.json();
     } catch (error) {
         console.log(error);
     }
@@ -34,11 +34,14 @@ const getPjxs = async () => {
 
 export default async function Projects({ params }) {
     const { id } = params;
+    
+    const projects = await getPjxs();
+    console.log("heeloo", projects);
+
     const { project } = await getPjxById(id);
     console.log("heeloo", project);
 
-    const { projects } = await getPjxs();
-    console.log("heeloo", projects);
+    
 
     return (
         <div className="w-full overflow-hidden">
