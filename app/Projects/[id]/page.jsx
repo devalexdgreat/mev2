@@ -48,11 +48,12 @@ export default async function Projects({ params }) {
     } else {
         passedIndex = index;
     }
+    var idex = passedIndex+1;
 
     return (
         <div className="w-full overflow-hidden">
                 <div className="w-11/12 md:w-10/12 mx-auto">
-                    <Details data={project} pjxs={projects} idex={passedIndex} />
+                    <Details data={project} pjxs={projects} idex={idex} />
                 </div>
         </div>
     );
