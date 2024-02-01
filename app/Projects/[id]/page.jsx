@@ -18,15 +18,15 @@ const getPjxById = async (id) => {
 
 const getPjxs = async () => {
     try {
-        const res = await fetch(`https://devalexdgreat.vercel.app/api/projects`, {
+        const resi = await fetch(`https://devalexdgreat.vercel.app/api/projects`, {
             cache: "no-store",
         });
 
-        if (!res.ok) {
+        if (!resi.ok) {
             throw new Error("Failed to fetch Projects");
         }
 
-        return res.json();
+        return resi.json();
     } catch (error) {
         console.log(error);
     }
