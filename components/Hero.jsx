@@ -18,7 +18,7 @@ export default function Hero() {
 
     return(
         <div className="w-full h-screen flex relative items-center heroStyle overflow-hidden 
-        bg-cover md:bg-none bg-left md:bg-right">
+        bg-cover bg-left md:bg-right opacity-85">
             <div className="w-11/12 md:w-10/12 mx-auto flex flex-col justify-center h-4/6 
             text-white">
                 <motion.h1 
