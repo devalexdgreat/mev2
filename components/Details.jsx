@@ -74,7 +74,7 @@ export default function Details({ data, pjxs, idex }) {
                                     items-center justify-center flex-col gap-5">
                                         <h1 className="text-5xl">{pjxs[idex].name}</h1>
                                         <Magnetic>
-                                            <Link href={`/projects/${pjxs[idex].demo}`} className="py-3 px-6 bg-white text-black rounded-lg">
+                                            <Link href={`/projects/${pjxs[idex]._id}`} className="py-3 px-6 bg-white text-black rounded-lg">
                                                 Next Project
                                             </Link>
                                         </Magnetic>
