@@ -7,7 +7,8 @@ import upIcon from '@/public/up.png';
 import Link from "next/link";
 import Magnetic from "@/components/Magnetic";
 
-export default function Details({ data, pjxs }) {
+export default function Details({ data, pjxs, idex }) {
+
     return (
         <>
             <div className=" mt-52 md:mt-72">
@@ -68,7 +69,7 @@ export default function Details({ data, pjxs }) {
                                     <h1 className="headertin text-4xl md:text-6xl pb-1">Explore Next Project</h1>
                                 </motion.div>
                                 <div className="h-72 mt-24 relative">
-                                    <Image src={pjxs[1].imgurl} width={1200} height={1200} className="h-full object-cover object-center"  alt="" />
+                                    <Image src={pjxs[idex].imgurl} width={1200} height={1200} className="h-full object-cover object-center"  alt="" />
                                     <div className="h-full w-full nextpjx absolute top-0 flex 
                                     items-center justify-center flex-col gap-5">
                                         <h1 className="text-5xl">Tiktok Clone</h1>

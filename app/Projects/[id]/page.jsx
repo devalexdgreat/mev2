@@ -41,12 +41,18 @@ export default async function Projects({ params }) {
     const { project } = await getPjxById(id);
     console.log("heeloo", project);
 
-    
+    var index = projects.findIndex(x => x._id === project._id);
+    var passedIndex;
+    if(index === project.length) {
+        passedIndex = -1;
+    } else {
+        passedIndex = index;
+    }
 
     return (
         <div className="w-full overflow-hidden">
                 <div className="w-11/12 md:w-10/12 mx-auto">
-                    <Details data={project} pjxs={projects}/>
+                    <Details data={project} pjxs={projects} idex={passedIndex} />
                 </div>
         </div>
     );
