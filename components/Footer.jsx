@@ -3,7 +3,8 @@ import { SocialIcon } from "react-social-icons";
 
 export default function Footer() {
     return (
-        <div className="w-full bg-green-500" id="footer">
+        <div className="w-full bg-green-500 relative bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]" id="footer">
+
             <div className="w-11/12 h-full md:w-10/12 mx-auto flex flex-col justify-between">
                 <div className="">
                     <h1 className="text-3xl w-full md:text-5xl md:w-7/12 mt-6 mb-12 font-medium">
