@@ -1,3 +1,4 @@
+"use client";
 import Image from 'next/image';
 import heroImg from '@/public/avatar.jpg';
 import imgTwo from '@/public/1.jpg';

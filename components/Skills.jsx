@@ -13,7 +13,7 @@ export default function Skills() {
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
                 className="mb-12">
-                    <h1 className="w-8/12 md:w-6/12 text-4xl md:text-6xl headertin pb-1">My Stack & <br/>Proficiency.</h1>
+                    <h1 className="w-11/12 md:w-6/12 text-4xl md:text-6xl headertin pb-1">My Stack & <br className="hidden md:block"/>Proficiency.</h1>
                 </motion.div>
                 <motion.div 
                 initial={{ x: 100, opacity: 0 }}

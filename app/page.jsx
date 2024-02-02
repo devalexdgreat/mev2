@@ -5,6 +5,7 @@ import Hero from '@/components/Hero';
 import Projects from '@/components/Projects';
 import Skills from '@/components/Skills';
 import Nav from "@/components/Nav";
+import Services from "@/components/Services";
 
 export default function Home() {
 
@@ -46,6 +47,7 @@ export default function Home() {
       <Nav />
       <Hero />
       <Projects />
+      <Services />
       <Skills />
     </main>
   );
