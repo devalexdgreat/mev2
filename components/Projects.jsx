@@ -150,7 +150,7 @@ export default function Projects() {
                                     whileInView={{ x: 0, opacity: 1 }}
                                     transition={{ delay: 0.3, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
                                     className="h-12 bg-green-500 w-full flex items-center">
-                                        <p className='ms-4'>CheckSymptoms</p>
+                                        <p className='ms-4'>Symptopia</p>
                                     </motion.div>
                                 </Magnetic>
                                 
