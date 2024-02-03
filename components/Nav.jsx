@@ -161,9 +161,9 @@ export default function Nav() {
                   initial={{ x: 100, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{ delay: 1.8 }} className="text-center">
-                    <a className="text-3xl md:text-5xl text-center text-gray-500" onClick={toggleMenu}>
-                      Blogs
-                    </a>
+                    <Link href={"/Blogs"} className="text-3xl md:text-5xl text-center" onClick={toggleMenu}>
+                      Blog
+                    </Link>
                   </motion.span>
                   <motion.span 
                   initial={{ x: 100, opacity: 0 }}
