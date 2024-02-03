@@ -4,6 +4,7 @@ import Link from "next/link";
 import leftIcon from '@/public/left.png';
 import rightIcon from '@/public/right.png';
 import bigIcon from '@/public/test.jpg';
+import smallIcon from '@/public/test2.webp';
 import Image from "next/image";
 
 export default function Blogs() {
@@ -58,16 +59,16 @@ export default function Blogs() {
                         </div>
 
                         <div className="bg-gradient-to-l from-black to-transparent absolute top-0 right-0 h-full w-[120px] flex items-center justify-end">
-                            <button onClick={slideRight} className="bg-green-800 py-1 px-3 rounded-full hover:bg-green-500 duration-500" id="right"><Image src={rightIcon} className="h-6 w-6" alt=""/></button>
+                            <button onClick={slideRight} className="bg-green-800 py-1 px-3 rounded-full hover:bg-green-500 duration-500 hidden md:block" id="right"><Image src={rightIcon} className="h-6 w-6" alt=""/></button>
                         </div>
                     </div> 
                 </div>
                 
                 <div className="w-full mt-12">
                     <div className="w-full md:w-10/12 mx-auto">
-                        <Link href={'#'} className="w-full flex flex-col md:flex-row bg-black/50 md:border-[0.5px] border-green-800">
-                            <div className="h-[200px] md:h-[400px] w-full md:w-8/12">
-                                <Image src={bigIcon} alt="" className="object-cover object-center h-full" />
+                        <Link href={'#'} className="mb-12 group w-full flex flex-col md:flex-row bg-black/50 md:border-[0.5px] border-green-800">
+                            <div className="h-[200px] md:h-[400px] w-full md:w-8/12 overflow-hidden">
+                                <Image src={bigIcon} alt="" className="object-cover object-center h-full group-hover:scale-105 duration-700" />
                             </div>
                             <div className="flex flex-col justify-between w-full md:w-4/12 p-8 gap-12 md:gap-0">
                                 <div>
@@ -79,6 +80,65 @@ export default function Blogs() {
                                 </div>
                             </div>
                         </Link>
+
+                        <div className="w-10/12 md:w-full mx-auto grid grid-cols-1 gap-8 md:grid-cols-3">
+                            <Link href={'#'} className="group w-full flex flex-col bg-black/50 border-[0.5px] border-green-800">
+                                <div className="h-[200px] w-full overflow-hidden">
+                                    <Image src={smallIcon} alt="" className="object-cover object-center h-full group-hover:scale-105 duration-700" />
+                                </div>
+                                <div className="flex flex-col justify-between w-full p-5 gap-12">
+                                    <div>
+                                        <h1 className="text-xl headertin">Case Study: Client Portal Design for Edge AI in the Cloud</h1>
+                                    </div>
+                                    <div className="">
+                                        <span className="text-gray-400 text-xs">6 min</span>
+                                        <h1 className="text-sm">Strategy, UX Design, Client Portal</h1>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href={'#'} className="group w-full flex flex-col bg-black/50 border-[0.5px] border-green-800">
+                                <div className="h-[200px] w-full overflow-hidden">
+                                    <Image src={smallIcon} alt="" className="object-cover object-center h-full group-hover:scale-105 duration-700" />
+                                </div>
+                                <div className="flex flex-col justify-between w-full p-5 gap-12">
+                                    <div>
+                                        <h1 className="text-xl headertin">Case Study: Client Portal Design for Edge AI in the Cloud</h1>
+                                    </div>
+                                    <div className="">
+                                        <span className="text-gray-400 text-xs">6 min</span>
+                                        <h1 className="text-sm">Strategy, UX Design, Client Portal</h1>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href={'#'} className="group w-full flex flex-col bg-black/50 border-[0.5px] border-green-800">
+                                <div className="h-[200px] w-full overflow-hidden">
+                                    <Image src={smallIcon} alt="" className="object-cover object-center h-full group-hover:scale-105 duration-700" />
+                                </div>
+                                <div className="flex flex-col justify-between w-full p-5 gap-12">
+                                    <div>
+                                        <h1 className="text-xl headertin">Case Study: Client Portal Design for Edge AI in the Cloud</h1>
+                                    </div>
+                                    <div className="">
+                                        <span className="text-gray-400 text-xs">6 min</span>
+                                        <h1 className="text-sm">Strategy, UX Design, Client Portal</h1>
+                                    </div>
+                                </div>
+                            </Link>
+                            <Link href={'#'} className="group w-full flex flex-col bg-black/50 border-[0.5px] border-green-800">
+                                <div className="h-[200px] w-full overflow-hidden">
+                                    <Image src={smallIcon} alt="" className="object-cover object-center h-full group-hover:scale-105 duration-700" />
+                                </div>
+                                <div className="flex flex-col justify-between w-full p-5 gap-12">
+                                    <div>
+                                        <h1 className="text-xl headertin">Case Study: Client Portal Design for Edge AI in the Cloud</h1>
+                                    </div>
+                                    <div className="">
+                                        <span className="text-gray-400 text-xs">6 min</span>
+                                        <h1 className="text-sm">Strategy, UX Design, Client Portal</h1>
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
                     </div>
                 </div>
 
