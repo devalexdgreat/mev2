@@ -5,6 +5,8 @@ import leftIcon from '@/public/left.png';
 import rightIcon from '@/public/right.png';
 import bigIcon from '@/public/test.jpg';
 import smallIcon from '@/public/test2.webp';
+import thiIcon from '@/public/test3.webp';
+import forIcon from '@/public/test4.webp';
 import Image from "next/image";
 
 export default function Blogs() {
@@ -66,23 +68,23 @@ export default function Blogs() {
                 
                 <div className="w-full mt-12">
                     <div className="w-full md:w-10/12 mx-auto">
-                        <Link href={'#'} className="mb-12 group w-full flex flex-col md:flex-row bg-black/50 md:border-[0.5px] border-green-800">
+                        <Link href={'#'} className="mb-12 group w-full flex flex-col md:flex-row bg-black/50 md:border-[0.5px] border-green-900">
                             <div className="h-[200px] md:h-[400px] w-full md:w-8/12 overflow-hidden">
                                 <Image src={bigIcon} alt="" className="object-cover object-center h-full group-hover:scale-105 duration-700" />
                             </div>
-                            <div className="flex flex-col justify-between w-full md:w-4/12 p-8 gap-12 md:gap-0">
+                            <div className="flex flex-col justify-between w-full md:w-4/12 p-5 md:p-8 gap-12 md:gap-0">
                                 <div>
                                     <h1 className="text-2xl md:text-4xl headertin">17 AI-powered Features That Will Revolutionize Banking UX</h1>
                                 </div>
-                                <div className="border-b-[0.5px] md:border-0 border-green-800 pb-6 md:pb-0">
+                                <div className="border-b-[0.5px] md:border-0 border-green-900 pb-6 md:pb-0">
                                     <span className="text-gray-400 text-xs">15 min</span>
                                     <h1 className="text-sm">Banking UX, UX Design, AI</h1>
                                 </div>
                             </div>
                         </Link>
 
-                        <div className="w-10/12 md:w-full mx-auto grid grid-cols-1 gap-8 md:grid-cols-3">
-                            <Link href={'#'} className="group w-full flex flex-col bg-black/50 border-[0.5px] border-green-800">
+                        <div className="w-11/12 md:w-full mx-auto grid grid-cols-1 gap-8 md:grid-cols-3">
+                            <Link href={'#'} className="group w-full flex flex-col bg-black/50 border-[0.5px] border-green-900">
                                 <div className="h-[200px] w-full overflow-hidden">
                                     <Image src={smallIcon} alt="" className="object-cover object-center h-full group-hover:scale-105 duration-700" />
                                 </div>
@@ -96,9 +98,9 @@ export default function Blogs() {
                                     </div>
                                 </div>
                             </Link>
-                            <Link href={'#'} className="group w-full flex flex-col bg-black/50 border-[0.5px] border-green-800">
+                            <Link href={'#'} className="group w-full flex flex-col bg-black/50 border-[0.5px] border-green-900">
                                 <div className="h-[200px] w-full overflow-hidden">
-                                    <Image src={smallIcon} alt="" className="object-cover object-center h-full group-hover:scale-105 duration-700" />
+                                    <Image src={thiIcon} alt="" className="object-cover object-center h-full group-hover:scale-105 duration-700" />
                                 </div>
                                 <div className="flex flex-col justify-between w-full p-5 gap-12">
                                     <div>
@@ -110,9 +112,9 @@ export default function Blogs() {
                                     </div>
                                 </div>
                             </Link>
-                            <Link href={'#'} className="group w-full flex flex-col bg-black/50 border-[0.5px] border-green-800">
+                            <Link href={'#'} className="group w-full flex flex-col bg-black/50 border-[0.5px] border-green-900">
                                 <div className="h-[200px] w-full overflow-hidden">
-                                    <Image src={smallIcon} alt="" className="object-cover object-center h-full group-hover:scale-105 duration-700" />
+                                    <Image src={forIcon} alt="" className="object-cover object-center h-full group-hover:scale-105 duration-700" />
                                 </div>
                                 <div className="flex flex-col justify-between w-full p-5 gap-12">
                                     <div>
@@ -124,7 +126,7 @@ export default function Blogs() {
                                     </div>
                                 </div>
                             </Link>
-                            <Link href={'#'} className="group w-full flex flex-col bg-black/50 border-[0.5px] border-green-800">
+                            <Link href={'#'} className="group w-full flex flex-col bg-black/50 border-[0.5px] border-green-900">
                                 <div className="h-[200px] w-full overflow-hidden">
                                     <Image src={smallIcon} alt="" className="object-cover object-center h-full group-hover:scale-105 duration-700" />
                                 </div>
