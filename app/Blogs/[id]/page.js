@@ -13,7 +13,7 @@ export default function Blog() {
                     <div className="w-full h-5/6 md:hidden overflow-hidden relative">
                         
                         <Image src={forIcon} className="h-full w-full object-cover absolute -z-20 opacity-60" alt=""/>
-                        <div className="w-10/12 mx-auto mt-32">
+                        <div className="w-10/12 mx-auto mt-44">
                             <button className="gap-3 h-10 flex items-center">
                                 <Image src={leftIcon} alt="" className="h-6 w-6 p-0.5 bg-green-500 rounded-full" />
                                 <span className="text-lg headertin">All Insights</span>
