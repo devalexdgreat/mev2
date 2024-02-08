@@ -68,7 +68,7 @@ export default function Blogs() {
                 
                 <div className="w-full mt-12">
                     <div className="w-full md:w-10/12 mx-auto">
-                        <Link href={'#'} className="mb-12 group w-full flex flex-col md:flex-row bg-black/50 md:border-[0.5px] border-green-900">
+                        <Link href={'/Blogs/hfjf'} className="mb-12 group w-full flex flex-col md:flex-row bg-black/50 md:border-[0.5px] border-green-900">
                             <div className="h-[200px] md:h-[400px] w-full md:w-8/12 overflow-hidden">
                                 <Image src={bigIcon} alt="" className="object-cover object-center h-full group-hover:scale-105 duration-700" />
                             </div>
@@ -84,7 +84,7 @@ export default function Blogs() {
                         </Link>
 
                         <div className="w-11/12 md:w-full mx-auto grid grid-cols-1 gap-8 md:grid-cols-3">
-                            <Link href={'#'} className="group w-full flex flex-col bg-black/50 border-[0.5px] border-green-900">
+                            <Link href={'/Blogs/hjjd'} className="group w-full flex flex-col bg-black/50 border-[0.5px] border-green-900">
                                 <div className="h-[200px] w-full overflow-hidden">
                                     <Image src={smallIcon} alt="" className="object-cover object-center h-full group-hover:scale-105 duration-700" />
                                 </div>
@@ -98,7 +98,7 @@ export default function Blogs() {
                                     </div>
                                 </div>
                             </Link>
-                            <Link href={'#'} className="group w-full flex flex-col bg-black/50 border-[0.5px] border-green-900">
+                            <Link href={'/Blogs/hyhhh'} className="group w-full flex flex-col bg-black/50 border-[0.5px] border-green-900">
                                 <div className="h-[200px] w-full overflow-hidden">
                                     <Image src={thiIcon} alt="" className="object-cover object-center h-full group-hover:scale-105 duration-700" />
                                 </div>
@@ -112,23 +112,9 @@ export default function Blogs() {
                                     </div>
                                 </div>
                             </Link>
-                            <Link href={'#'} className="group w-full flex flex-col bg-black/50 border-[0.5px] border-green-900">
+                            <Link href={'/Blogs/hhh'} className="group w-full flex flex-col bg-black/50 border-[0.5px] border-green-900">
                                 <div className="h-[200px] w-full overflow-hidden">
                                     <Image src={forIcon} alt="" className="object-cover object-center h-full group-hover:scale-105 duration-700" />
-                                </div>
-                                <div className="flex flex-col justify-between w-full p-5 gap-12">
-                                    <div>
-                                        <h1 className="text-xl headertin">Case Study: Client Portal Design for Edge AI in the Cloud</h1>
-                                    </div>
-                                    <div className="">
-                                        <span className="text-gray-400 text-xs">6 min</span>
-                                        <h1 className="text-sm">Strategy, UX Design, Client Portal</h1>
-                                    </div>
-                                </div>
-                            </Link>
-                            <Link href={'#'} className="group w-full flex flex-col bg-black/50 border-[0.5px] border-green-900">
-                                <div className="h-[200px] w-full overflow-hidden">
-                                    <Image src={smallIcon} alt="" className="object-cover object-center h-full group-hover:scale-105 duration-700" />
                                 </div>
                                 <div className="flex flex-col justify-between w-full p-5 gap-12">
                                     <div>

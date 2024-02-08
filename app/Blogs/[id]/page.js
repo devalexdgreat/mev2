@@ -44,8 +44,8 @@ export default function Blog() {
                     </div>
                 </div>
 
-                <div className="flex w-11/12 md:w-10/12 mx-auto pt-16 sticky top-0 overflow-y-scroll h-[90vh] scrollbar-hide">
-                    <div className="flex flex-col headertin w-4/12 sticky top-0">
+                <div className="flex w-11/12 md:w-10/12 mx-auto pt-16 sticky top-0 md:overflow-y-scroll md:h-[90vh] scrollbar-hide">
+                    <div className="md:flex flex-col headertin w-4/12 sticky top-0 hidden">
                         <Link href={'#'} className="">Introduction</Link>
                         <Link href={'#'} className="">Basics</Link>
                         <Link href={'#'} className="">Types</Link>
@@ -53,7 +53,7 @@ export default function Blog() {
                         <Link href={'#'} className="">Reviews</Link>
                         <Link href={'#'} className="">Closure</Link>
                     </div>
-                    <div className="w-8/12 flex flex-col gap-7">
+                    <div className="w-full md:w-8/12 flex flex-col gap-7">
                         <p>The world of eCommerce moves fast. In this world, one change follows another, and trends and research are shaping the industry at lightning speed. Today eshopping has become an easy way to obtain the thing or service you want – but selling online is a skill. We've compiled a list of the best practices in eCommerce.</p>
                         <p>With the advent of eСommerce, many sellers are trying to find best-practices UX design for a positive user experience. UX design is central to the user experience of your eCommerce store. This is not just about beauty. Intuitive interaction, logical transitions and CTA buttons, payment for purchase – all these details play in your favor or otherwise. eCommerce is fairer than retail. There's constant change there, and it requires the retailer to constantly monitor the market.</p>
                         <p>Retailers used to study customer psychology. Buyers and managers positioned merchandise on their shelves in a meaningful way. This was to ensure that the customer made his journey through the store the way the salesperson wanted. The customer's spend increased with the help of competent navigation on the shelves and racks, music and additional services: tastings, discounts and random purchases at the cash point.</p>
