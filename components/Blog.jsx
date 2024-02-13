@@ -62,6 +62,9 @@ export default function Blog() {
                         </div>
                     </Link>
                 </div>
+                <div className="w-full flex justify-center">
+                    <Link href={"/Blogs"} className="btnStyle py-4 px-6 mt-12">See more Blogs</Link>
+                </div>
             </div>
         </div>
     );
