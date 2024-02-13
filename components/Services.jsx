@@ -19,60 +19,60 @@ export default function Services() {
                 className="pt-1 md:pt-12 w-full"
                 >
 
-                    <div class="w-full mx-auto min-h-sceen">
-                        <div class="grid divide-y divide-green-500 w-full mx-auto mt-8">
-                            <div class="py-5">
-                                <details class="group">
-                                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                    <div className="w-full mx-auto min-h-sceen">
+                        <div className="grid divide-y divide-green-500 w-full mx-auto mt-8">
+                            <div className="py-5">
+                                <details className="group">
+                                    <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                                         <span className="text-4xl headertin"> Design</span>
-                                        <span class="transition group-open:rotate-180 rounded-xl p-1 bg-green-500">
+                                        <span className="transition group-open:rotate-180 rounded-xl p-1 bg-green-500">
                                             <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p class="text-white mt-3 group-open:animate-fadeIn">
+                                    <p className="text-white mt-3 group-open:animate-fadeIn">
                                         I specialize in creating visually stunning designs. From concept to execution, I bring creativity and precision to every project, ensuring a compelling and cohesive visual experience.
                                     </p>
                                 </details>
                             </div>
-                            <div class="py-5">
-                                <details class="group">
-                                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                            <div className="py-5">
+                                <details className="group">
+                                    <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                                         <span className="text-4xl headertin"> Development</span>
-                                        <span class="transition group-open:rotate-180 rounded-xl p-1 bg-green-500">
+                                        <span className="transition group-open:rotate-180 rounded-xl p-1 bg-green-500">
                                             <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p class="text-white mt-3 group-open:animate-fadeIn">
+                                    <p className="text-white mt-3 group-open:animate-fadeIn">
                                         Using React.js, Next.js, Tailwind CSS, Framer Motion, GSAP, and MongoDB, I craft dynamic, interactive websites with seamless design and robust content management.
                                     </p>
                                 </details>
                             </div>
-                            <div class="py-5">
-                                <details class="group">
-                                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                            <div className="py-5">
+                                <details className="group">
+                                    <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                                         <span className="text-4xl headertin"> Maintenance</span>
-                                        <span class="transition group-open:rotate-180 rounded-xl p-1 bg-green-500">
+                                        <span className="transition group-open:rotate-180 rounded-xl p-1 bg-green-500">
                                             <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p class="text-white mt-3 group-open:animate-fadeIn">
+                                    <p className="text-white mt-3 group-open:animate-fadeIn">
                                         I provide efficient maintenance solutions, ensuring websites remain smooth and secure. Utilizing proactive measures, I offer timely updates and support to keep your online presence optimized.
                                     </p>
                                 </details>
                             </div>
-                            <div class="py-5">
-                                <details class="group">
-                                    <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                            <div className="py-5">
+                                <details className="group">
+                                    <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
                                         <span className="text-4xl headertin"> Consultation</span>
-                                        <span class="transition group-open:rotate-180 rounded-xl p-1 bg-green-500">
+                                        <span className="transition group-open:rotate-180 rounded-xl p-1 bg-green-500">
                                             <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
                                             </svg>
                                         </span>
                                     </summary>
-                                    <p class="text-white mt-3 group-open:animate-fadeIn">
+                                    <p className="text-white mt-3 group-open:animate-fadeIn">
                                         Guiding your project with expert consultation. Tailored advice and industry insights to elevate your strategies and ensure success.
                                     </p>
                                 </details>
