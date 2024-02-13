@@ -18,7 +18,7 @@ export default function Blog() {
                         Insights & Inspiration
                     </h1>
                 </motion.div>
-                <div className="w-11/12 md:w-full mx-auto grid grid-cols-1 gap-8 md:grid-cols-3">
+                <div className="w-full md:w-full mx-auto grid grid-cols-1 gap-8 md:grid-cols-3">
                     <Link href={'/Blogs/hjjd'} className="group w-full flex flex-col bg-black/50 border-[0.5px] border-green-900">
                         <div className="h-[200px] w-full overflow-hidden">
                             <Image src={smallIcon} alt="" className="object-cover object-center h-full group-hover:scale-105 duration-700" />
