@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 export default function Services() {
     return (
-        <div className="w-full my-44 overflow-hidden">
+        <div className="w-full mt-24 mb-44 overflow-hidden">
             <div className="w-11/12 md:w-10/12 mx-auto flex flex-col md:flex-row">
                 <motion.div 
                 initial={{ x: -100, opacity: 0 }}

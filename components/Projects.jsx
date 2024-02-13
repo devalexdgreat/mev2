@@ -72,36 +72,6 @@ export default function Projects() {
                         ))}
                 </div>
 
-                {/* <div className='w-full flex flex-col border-t border-green-500'>
-                    <div className='w-full border-b border-[#17B486]'>
-                        <Link href={"/Projects/hhfhh"} className=' w-full group view'>
-                            <div className='w-full px-3 mx-auto flex justify-between items-center'>
-                                <span className='text-xl md:text-6xl py-6 group-hover:-translate-x-4 duration-500 
-                                group-hover:text-gray-100/30'>Medicsyn Club</span>
-                                <span className='text-sm md:text-base group-hover:translate-x-4 duration-500 
-                                group-hover:text-gray-100/30'>Design & Development</span>
-                            </div>
-                        </Link> 
-                    </div>
-                    
-                    <Link href={"/Projects/hhfhh"} className='border-b border-[#17B486] w-full group view'>
-                        <div className='w-full px-3 mx-auto flex justify-between items-center'>
-                            <span className='text-xl md:text-6xl py-6 group-hover:-translate-x-4 duration-500 
-                            group-hover:text-gray-100/30'>Portfolio V1-23</span>
-                            <span className='text-sm md:text-base group-hover:translate-x-4 duration-500 
-                            group-hover:text-gray-100/30'>Design & Development</span>
-                        </div>
-                    </Link>
-                    <Link href={"/Projects/hhfhh"} className='border-b border-[#17B486] w-full group view'>
-                        <div className='w-full px-3 mx-auto flex justify-between items-center'>
-                            <span className='text-xl md:text-6xl py-6 group-hover:-translate-x-4 duration-500 
-                            group-hover:text-gray-100/30'>AkGlobal</span>
-                            <span className='text-sm md:text-base group-hover:translate-x-4 duration-500 
-                            group-hover:text-gray-100/30'>Design & Development</span>
-                        </div>
-                    </Link>
-                </div> */}
-
                 <motion.div
                 className="w-full flex flex-col items-center justify-center mt-16">
                     <Magnetic>
