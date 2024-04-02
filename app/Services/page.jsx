@@ -81,6 +81,24 @@ export default function Services() {
                         whileInView={{ x: 0, opacity: 1 }}
                         transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
                         className="w-full md:w-6/12">
+                            <h1 className="text-4xl md:text-5xl headertin">Seo Expertise</h1>
+                        </motion.div>
+                        <motion.div 
+                        initial={{ x: 100, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{ delay: 0.2, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+                        className="w-full md:w-6/12">
+                            <p className="w-full md:w-10/12 mx-0 md:mx-auto md:text-lg text-base leading-8">
+                                I specialize in optimizing websites to rank higher in search engine results, driving organic traffic and increasing your online presence. From keyword research to on-page optimization and content strategy. 
+                            </p>
+                        </motion.div>
+                    </div>
+                    <div className="flex w-full flex-col md:flex-row gap-8 md:gap-0">
+                        <motion.div 
+                        initial={{ x: -100, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        transition={{ delay: 0.1, duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+                        className="w-full md:w-6/12">
                             <h1 className="text-4xl md:text-5xl headertin">Maintenace</h1>
                         </motion.div>
                         <motion.div 

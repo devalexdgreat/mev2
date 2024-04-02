@@ -45,7 +45,7 @@ export default function About() {
                             <span>View Resume</span>
                             <Image className="h-6 w-6" src={viewIcon} alt='' />
                         </Link> */}
-                        <Link href={'/res.pdf'} className="btnStyle group flex items-center justify-center 
+                        <Link href={'/Resume.pdf'} className="btnStyle group flex items-center justify-center 
                         border py-1 px-2 rounded-lg text-base gap-1 hover:gap-0">
                             <Image src={viewIcon} className="duration-700 group-hover:h-0 group-hover:w-0 
                             group-hover:invisible h-6 w-6" alt="" />
